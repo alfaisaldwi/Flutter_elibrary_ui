@@ -3,10 +3,9 @@ import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class NavbarPageController extends GetxController {
   Rx<bool>? isSelected;
-  final contr = PersistentTabController(initialIndex: 0);
-  
+  final contr = PersistentTabController(initialIndex: 1);
 
-final PersistentTabController tabController = PersistentTabController();
+  final PersistentTabController tabController = PersistentTabController();
 
   @override
   void onInit() {

@@ -10,6 +10,8 @@ import 'package:elibrary_ui/app/modules/listen/bindings/listen_binding.dart';
 import 'package:elibrary_ui/app/modules/listen/views/listen_view.dart';
 import 'package:elibrary_ui/app/modules/navbar-page/bindings/navbar_page_binding.dart';
 import 'package:elibrary_ui/app/modules/navbar-page/views/navbar_page_view.dart';
+import 'package:elibrary_ui/app/modules/register/bindings/register_binding.dart';
+import 'package:elibrary_ui/app/modules/register/views/register_view.dart';
 import 'package:elibrary_ui/app/modules/shelf/bindings/shelf_binding.dart';
 import 'package:elibrary_ui/app/modules/shelf/views/shelf_view.dart';
 import 'package:elibrary_ui/app/modules/signin/bindings/signin_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.LANDING,
       page: () => LandingView(),
       binding: LandingBinding(),
+    ),
+    GetPage(
+      name: _Paths.REGISTER,
+      page: () => RegisterView(),
+      binding: RegisterBinding(),
     ),
   ];
 }

@@ -170,7 +170,7 @@ class SigninView extends GetView<SigninController> {
                                 ),
                               ),
                               onPressed: () async {
-                                Get.toNamed('/signin');
+                                Get.toNamed('/navbar-page');
                               },
                             ),
                           ),
@@ -192,12 +192,17 @@ class SigninView extends GetView<SigninController> {
                             SizedBox(
                               height: 10,
                             ),
-                            Text(
-                              'Sign-Up',
-                              style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w600,
-                                fontSize: 14,
-                                color: Color(0xff001687),
+                            GestureDetector(
+                              onTap: () {
+                                Get.toNamed('/register');
+                              },
+                              child: Text(
+                                'Sign-Up',
+                                style: GoogleFonts.roboto(
+                                  fontWeight: FontWeight.w600,
+                                  fontSize: 14,
+                                  color: Color(0xff001687),
+                                ),
                               ),
                             ),
                             SizedBox(

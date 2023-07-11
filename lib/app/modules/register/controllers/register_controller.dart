@@ -1,11 +1,12 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class SigninController extends GetxController {
+class RegisterController extends GetxController {
   var isPasswordVisible = false.obs;
   var isPasswordVisible2 = false.obs;
   TextEditingController emailc = TextEditingController();
   TextEditingController id = TextEditingController();
+  TextEditingController name = TextEditingController();
   TextEditingController ttl = TextEditingController();
   TextEditingController pwc = TextEditingController();
   TextEditingController pwc2 = TextEditingController();
@@ -13,11 +14,11 @@ class SigninController extends GetxController {
   void togglePasswordVisibility() {
     isPasswordVisible.toggle();
   }
+
   void togglePasswordVisibility2() {
     isPasswordVisible2.toggle();
   }
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -30,5 +31,5 @@ class SigninController extends GetxController {
 
   @override
   void onClose() {}
-  void increment() => count.value++;
+
 }

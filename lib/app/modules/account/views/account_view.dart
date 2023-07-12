@@ -134,6 +134,9 @@ class AccountView extends GetView<AccountController> {
                             ),
                           ]),
                     ),
+                    SizedBox(
+                      height: 20,
+                    ),
                     ClipRRect(
                       borderRadius: const BorderRadius.only(
                         topLeft: Radius.circular(35),
@@ -168,7 +171,7 @@ class AccountView extends GetView<AccountController> {
                                           style: GoogleFonts.roboto(
                                             letterSpacing: 1.0,
                                             fontWeight: FontWeight.w300,
-                                            fontSize: 22,
+                                            fontSize: 20,
                                             color: Colors.black,
                                           ),
                                         ),
@@ -195,7 +198,7 @@ class AccountView extends GetView<AccountController> {
                                           style: GoogleFonts.roboto(
                                             letterSpacing: 1.0,
                                             fontWeight: FontWeight.w300,
-                                            fontSize: 22,
+                                            fontSize: 20,
                                             color: Colors.black,
                                           ),
                                         ),
@@ -218,7 +221,7 @@ class AccountView extends GetView<AccountController> {
                                         style: GoogleFonts.roboto(
                                           letterSpacing: 1.0,
                                           fontWeight: FontWeight.w500,
-                                          fontSize: 22,
+                                          fontSize: 20,
                                           color: Color(0xffF80505),
                                         ),
                                       ),

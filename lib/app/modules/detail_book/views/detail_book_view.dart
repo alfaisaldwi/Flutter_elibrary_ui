@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:elibrary_ui/app/modules/detail_book/views/readbook_view.dart';
+import 'package:elibrary_ui/app/modules/shelf/views/success_rent_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -344,7 +346,7 @@ class DetailBookView extends GetView<DetailBookController> {
                     children: [
                       ElevatedButton(
                         onPressed: () {
-                          // Aksi ketika tombol "Read" ditekan
+                          Get.to(() => ReadBookView());
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.green,
@@ -369,7 +371,7 @@ class DetailBookView extends GetView<DetailBookController> {
 
                       ElevatedButton(
                         onPressed: () {
-                          // Aksi ketika tombol "Read" ditekan
+                          Get.to(SuccessRent());
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xffFF735C),

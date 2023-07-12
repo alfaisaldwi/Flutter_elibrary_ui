@@ -219,22 +219,16 @@ class RegisterView extends GetView<RegisterController> {
                                   ),
                                 ),
                                 onPressed: () async {
-                                  Get.toNamed('/home');
+                                  Get.toNamed('/signin');
                                 },
                               ),
                             ),
-                          ),
-                          SizedBox(
-                            height: 20,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: const [
                               const SizedBox(
-                                height: 20,
-                              ),
-                              const SizedBox(
-                                height: 60,
+                                height: 50,
                               )
                             ],
                           )

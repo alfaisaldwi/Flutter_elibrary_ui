@@ -68,7 +68,7 @@ class AccountSettingView extends GetView<AccountSettingView> {
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 20.0),
                           child: Container(
-                            height: 550,
+                            height: 520,
                             margin: EdgeInsets.only(top: 48),
                             decoration: BoxDecoration(
                                 color: Colors.white,
@@ -149,7 +149,7 @@ class AccountSettingView extends GetView<AccountSettingView> {
                                         ),
                                         SizedBox(height: 25.0),
                                         SizedBox(
-                                          height: 20,
+                                          height: 10,
                                         ),
                                         ClipRRect(
                                           borderRadius:
@@ -191,9 +191,6 @@ class AccountSettingView extends GetView<AccountSettingView> {
                                             ),
                                           ),
                                         ),
-                                        SizedBox(
-                                          height: 25,
-                                        )
                                       ],
                                     ),
                                   )),

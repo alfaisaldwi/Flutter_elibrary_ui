@@ -2,8 +2,12 @@ import 'package:get/get.dart';
 
 import 'package:elibrary_ui/app/modules/account/bindings/account_binding.dart';
 import 'package:elibrary_ui/app/modules/account/views/account_view.dart';
+import 'package:elibrary_ui/app/modules/account_setting/bindings/account_setting_binding.dart';
+import 'package:elibrary_ui/app/modules/account_setting/views/account_setting_view.dart';
 import 'package:elibrary_ui/app/modules/detail_book/bindings/detail_book_binding.dart';
 import 'package:elibrary_ui/app/modules/detail_book/views/detail_book_view.dart';
+import 'package:elibrary_ui/app/modules/edit_profile/bindings/edit_profile_binding.dart';
+import 'package:elibrary_ui/app/modules/edit_profile/views/edit_profile_view.dart';
 import 'package:elibrary_ui/app/modules/home/bindings/home_binding.dart';
 import 'package:elibrary_ui/app/modules/home/views/home_view.dart';
 import 'package:elibrary_ui/app/modules/landing/bindings/landing_binding.dart';
@@ -78,6 +82,16 @@ class AppPages {
       name: _Paths.DETAIL_BOOK,
       page: () => DetailBookView(),
       binding: DetailBookBinding(),
+    ),
+    GetPage(
+      name: _Paths.EDIT_PROFILE,
+      page: () => EditProfileView(),
+      binding: EditProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.ACCOUNT_SETTING,
+      page: () => AccountSettingView(),
+      binding: AccountSettingBinding(),
     ),
   ];
 }

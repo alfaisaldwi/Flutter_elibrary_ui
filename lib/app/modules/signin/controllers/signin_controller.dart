@@ -13,6 +13,7 @@ class SigninController extends GetxController {
   void togglePasswordVisibility() {
     isPasswordVisible.toggle();
   }
+
   void togglePasswordVisibility2() {
     isPasswordVisible2.toggle();
   }

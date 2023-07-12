@@ -14,6 +14,8 @@ abstract class Routes {
   static const LANDING = _Paths.LANDING;
   static const REGISTER = _Paths.REGISTER;
   static const DETAIL_BOOK = _Paths.DETAIL_BOOK;
+  static const EDIT_PROFILE = _Paths.EDIT_PROFILE;
+  static const ACCOUNT_SETTING = _Paths.ACCOUNT_SETTING;
 }
 
 abstract class _Paths {
@@ -27,4 +29,6 @@ abstract class _Paths {
   static const LANDING = '/landing';
   static const REGISTER = '/register';
   static const DETAIL_BOOK = '/detail-book';
+  static const EDIT_PROFILE = '/edit-profile';
+  static const ACCOUNT_SETTING = '/account-setting';
 }

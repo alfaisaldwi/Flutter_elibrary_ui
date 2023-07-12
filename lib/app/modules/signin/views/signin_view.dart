@@ -9,44 +9,36 @@ class SigninView extends GetView<SigninController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Container(
-          width: double.infinity,
-          decoration: const BoxDecoration(
-            color: Colors.white,
-            // gradient: LinearGradient(
-            //   begin: Alignment.topRight,
-            //   end: Alignment.bottomLeft,
-            // [Color(0xFFFF800B),Color(0xFFCE1010),]
-            // ),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Column(
-                children: [
-                  const SizedBox(
-                    height: 80,
-                  ),
-                  Image.asset(
-                    "assets/images/logo2.png",
-                    width: double.infinity,
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 50,
-              ),
-              ClipRRect(
+      body: Container(
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          color: Colors.white,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Column(
+              children: [
+                const SizedBox(
+                  height: 80,
+                ),
+                Image.asset(
+                  "assets/images/logo2.png",
+                  width: double.infinity,
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 50,
+            ),
+            Expanded(
+              child: ClipRRect(
                 borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(28),
                   topRight: Radius.circular(28),
                 ),
                 child: Container(
-                  height: 500,
-                  decoration: const BoxDecoration(
-                    color: Color(0xffFF735C),
-                  ),
+                  color: const Color(0xffFF735C),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Column(
@@ -159,7 +151,8 @@ class SigninView extends GetView<SigninController> {
                             ),
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
-                                  backgroundColor: const Color(0xff4054B1)),
+                                backgroundColor: const Color(0xff4054B1),
+                              ),
                               child: Text(
                                 'Login',
                                 style: GoogleFonts.roboto(
@@ -215,8 +208,8 @@ class SigninView extends GetView<SigninController> {
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

@@ -104,7 +104,7 @@ class EditProfileView extends GetView<EditProfileController> {
                                               padding:
                                                   const EdgeInsets.all(8.0),
                                               child: Icon(
-                                                PhosphorIcons.fill.notePencil,
+                                                PhosphorIcons.notePencil,
                                                 color: Color(0xffFF735C),
                                               ),
                                             ),

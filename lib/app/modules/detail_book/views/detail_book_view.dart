@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:elibrary_ui/app/modules/detail_book/views/readbook_view.dart';
+import 'package:elibrary_ui/app/modules/listen/views/listen_detail_view.dart';
 import 'package:elibrary_ui/app/modules/shelf/views/success_rent_view.dart';
 import 'package:flutter/material.dart';
 
@@ -395,7 +396,7 @@ class DetailBookView extends GetView<DetailBookController> {
                       SizedBox(width: 10.0), // Jarak antara tombol
                       ElevatedButton(
                         onPressed: () {
-                          // Aksi ketika tombol "Read" ditekan
+                          Get.to(() => ListenDetailView());
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xffF14668),

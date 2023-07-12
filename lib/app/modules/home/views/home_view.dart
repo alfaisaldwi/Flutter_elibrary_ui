@@ -16,6 +16,9 @@ class HomeView extends GetView<HomeController> {
         child: SingleChildScrollView(
           child: Column(
             children: [
+              SizedBox(
+                height: 20,
+              ),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20.0, vertical: 10),
@@ -312,12 +315,17 @@ class HomeView extends GetView<HomeController> {
                           SizedBox(
                             height: 5,
                           ),
-                          Align(
-                            alignment: Alignment.topCenter,
-                            child: Image.asset(
-                              'assets/images/image1.png',
-                              fit: BoxFit.cover,
-                              height: 180,
+                          GestureDetector(
+                            onTap: () {
+                              Get.toNamed('/detail-book');
+                            },
+                            child: Align(
+                              alignment: Alignment.topCenter,
+                              child: Image.asset(
+                                'assets/images/image1.png',
+                                fit: BoxFit.cover,
+                                height: 180,
+                              ),
                             ),
                           ),
                           const Padding(

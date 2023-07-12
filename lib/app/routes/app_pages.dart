@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import 'package:elibrary_ui/app/modules/account/bindings/account_binding.dart';
 import 'package:elibrary_ui/app/modules/account/views/account_view.dart';
+import 'package:elibrary_ui/app/modules/detail_book/bindings/detail_book_binding.dart';
+import 'package:elibrary_ui/app/modules/detail_book/views/detail_book_view.dart';
 import 'package:elibrary_ui/app/modules/home/bindings/home_binding.dart';
 import 'package:elibrary_ui/app/modules/home/views/home_view.dart';
 import 'package:elibrary_ui/app/modules/landing/bindings/landing_binding.dart';
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.REGISTER,
       page: () => RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.DETAIL_BOOK,
+      page: () => DetailBookView(),
+      binding: DetailBookBinding(),
     ),
   ];
 }

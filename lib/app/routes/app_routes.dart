@@ -13,6 +13,7 @@ abstract class Routes {
   static const SPLASH = _Paths.SPLASH;
   static const LANDING = _Paths.LANDING;
   static const REGISTER = _Paths.REGISTER;
+  static const DETAIL_BOOK = _Paths.DETAIL_BOOK;
 }
 
 abstract class _Paths {
@@ -25,4 +26,5 @@ abstract class _Paths {
   static const SPLASH = '/splash';
   static const LANDING = '/landing';
   static const REGISTER = '/register';
+  static const DETAIL_BOOK = '/detail-book';
 }

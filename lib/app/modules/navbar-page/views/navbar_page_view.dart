@@ -35,7 +35,7 @@ class NavbarPageView extends GetView<NavbarPageController> {
           icon: const Icon(
             Icons.headphones_rounded,
             size: 24,
-            color: Color.fromRGBO(36, 54, 101, 1.0),
+            color: Color(0xff888888),
           ),
           activeColorPrimary: const Color(0xffF8C800),
           inactiveColorPrimary: Colors.grey,
@@ -45,7 +45,7 @@ class NavbarPageView extends GetView<NavbarPageController> {
           icon: const Icon(
             Icons.home_rounded,
             size: 24,
-            color: Color.fromRGBO(36, 54, 101, 1.0),
+            color: Color(0xff888888),
           ),
           activeColorPrimary: const Color(0xffF8C800),
           inactiveColorPrimary: CupertinoColors.systemGrey),
@@ -54,7 +54,7 @@ class NavbarPageView extends GetView<NavbarPageController> {
           activeColorSecondary: Colors.black,
           icon: const Icon(Icons.view_column_outlined,
               size: 24, color: Color.fromRGBO(36, 54, 101, 1.0)),
-          activeColorPrimary: const Color(0xffF8C800),
+          activeColorPrimary: const Color(0xff888888),
           inactiveColorPrimary: Colors.grey,
           inactiveColorSecondary: Colors.white),
       PersistentBottomNavBarItem(
@@ -62,7 +62,7 @@ class NavbarPageView extends GetView<NavbarPageController> {
           activeColorSecondary: Colors.black,
           icon: const Icon(Icons.person_outline,
               size: 24, color: Color.fromRGBO(36, 54, 101, 1.0)),
-          activeColorPrimary: const Color(0xffF8C800),
+          activeColorPrimary: const Color(0xff888888),
           inactiveColorPrimary: Colors.grey,
           inactiveColorSecondary: Colors.white),
     ];

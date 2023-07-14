@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:elibrary_ui/app/modules/navbar-page/controllers/navbar_page_controller.dart';
 import 'package:elibrary_ui/app/modules/shelf/views/read_view.dart';
 import 'package:elibrary_ui/app/modules/shelf/views/rent_view.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,8 @@ import '../controllers/shelf_controller.dart';
 class SuccessRent extends GetView<ShelfController> {
   @override
   Widget build(BuildContext context) {
+    var navC = Get.put(NavbarPageController());
+
     return Scaffold(
       body: Container(
         height: double.infinity,
@@ -106,8 +109,9 @@ class SuccessRent extends GetView<ShelfController> {
                       ),
                       onPressed: () async {
                         controller.activeTabIndex.value == 1;
-                          controller.tabController.animateTo(1);
-                        Get.toNamed('/shelf');
+                        controller.tabController.animateTo(1);
+                        navC.contr.index = 2;
+                        Get.toNamed('/navbar-page');
                       },
                     ),
                   ),

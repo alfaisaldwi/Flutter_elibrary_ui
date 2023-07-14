@@ -89,7 +89,7 @@ class NavbarPageView extends GetView<NavbarPageController> {
           ),
         ],
       ),
-      controller: controller.tabController,
+      controller: controller.contr,
     );
   }
 }

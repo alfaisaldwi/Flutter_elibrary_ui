@@ -344,6 +344,8 @@ class DetailBookView extends GetView<DetailBookController> {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       ElevatedButton(
                         onPressed: () {
@@ -372,7 +374,7 @@ class DetailBookView extends GetView<DetailBookController> {
 
                       ElevatedButton(
                         onPressed: () {
-                          Get.to(SuccessRent());
+                          Get.to(() => SuccessRent());
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xffFF735C),
